@@ -10,14 +10,11 @@ const Countries = () => {
       .then(data => setCountries(data));
     }, [])
     return (
-      <div style={{margin: "63px 0"}}>
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)'}}>
+      <div style={{margin: "63px 0",display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridGap: '40px'}}>
+        
           {
             countries.map(country => <Country key={country.name} country={country}></Country>)
           }
-        </div>
-        
-
 
         {/* {
           countries.map(country => <Country image={country.flags.png} nativeName={country.nativeName} name={country.name} capital={country.capital}></Country>)
