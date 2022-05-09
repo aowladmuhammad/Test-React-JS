@@ -40,7 +40,6 @@ const Counter = () => {
   if (count > 30) {
     document.getElementById('change-it').innerHTML = 'Ha Ha! Like this surprise? The counter is gone except the buttons.';
   }
-console.log(count);
   return(
     <div>
       <h3 style={{margin: "0"}}><span id='change-it'>Count:  {zero}{count}</span><br />{text}</h3>
