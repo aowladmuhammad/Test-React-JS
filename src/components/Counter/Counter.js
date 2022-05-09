@@ -24,7 +24,7 @@ const Counter = () => {
     } else if ( count > 0) {
       setText();
      }
-    if(count >= 11 && count < 30) {
+    if(count > 10 && count < 30) {
       setText('Increment it to 31 and get a surprise!');
     }
     if(count > 30) {
